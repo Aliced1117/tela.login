@@ -1,0 +1,75 @@
+body{
+    background-image: linear-gradient(50deg, #00FA9A, #FF00FF);
+}
+
+div{
+    position: absolute;
+    top: 19%;
+    left: 38%;
+    background-color: rgba(255, 255, 255, 0.527);
+    /*espaçamento interno entre a borda e o input*/
+    padding: 60px;
+    border-radius: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button{
+    background-color: dodgerblue;
+    border-radius: 10px 10px;
+    padding: 10px 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    /*tirar a borda do botão*/
+    border: none;
+    color: white;
+}
+
+button:hover{
+    background-color: deepskyblue;
+    cursor: pointer;
+}
+
+.voltar{
+    background-color: #ff0000;
+    border-radius: 10px 10px;
+    padding: 10px 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    color: white;
+}
+
+.voltar:hover {
+    background-color: #fe7272;
+}
+
+input{
+    padding: 7px;
+    border: none;
+    /*tirar a borda que ficar do lado de fora*/
+    outline: none;
+}
+a{
+    color: dodgerblue;
+}
+
+a:hover{
+    color: deepskyblue;
+}
+
+/*animação da img*/
+
+img{
+   transform: translate(0px); 
+   animation: float 5s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%{
+        transform: translatey(0px);
+    }
+    50%{
+        transform: translatey(-10px);
+    }
+    100%{
+        transform: translatey(0%);
+    }
+}
